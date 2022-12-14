@@ -51,7 +51,7 @@ function resetearClases(){
 	  resetearClases();
 	  $("#paso1").addClass("anterior");
 	  $("#pasoFinal").addClass("siguiente");
-	  $("#textoResultado").html( "El <b>Sello CAME Sustentable</b> es una herramienta para empresas que se encuentren habilitadas para comercializar sus productos y servicios por la autoridad competente. Te invitamos a que vuelvas a contactarnos cuando completes el proceso de habilitación. Si eres emprendedor o estás iniciando tu idea de negocio, te invitamos a contactar a CAME Incuba para orientarte en lo que necesites." );
+	  $("#textoResultado").html( "El <b>Sello CAME Sustentable</b> es una herramienta para empresas que se encuentren habilitadas para comercializar sus productos y servicios por la autoridad competente. Te pedimos que nos vuelvas a contactar cuando completes el proceso de habilitación. Si sos emprendedor/a o estás iniciando tu idea de negocio, te invitamos a contactar a CAME Incuba (<a href ='mailto:incubadora@came.org.ar'>incubadora@came.org.ar</a>) para orientarte en lo que necesites" );
 
 	  siguientePaso();
 	  return true;
@@ -66,6 +66,10 @@ function resetearClases(){
 	
 	check_p2 = $("input:radio[name=p2]:checked").val();
 	check_p3 = $("input:radio[name=p3]:checked").val();
+	if (check_p2 == undefined || check_p3 == undefined) {
+		alert("Tiene que elegir una respuesta");
+		return false;
+	}
     if (check_p2 == 1 || check_p3 == 1) {	
 		resetearClases();
 		$("#paso2").addClass("anterior");
@@ -80,7 +84,7 @@ function resetearClases(){
 	//  $("#paso2").css("display", "none");
 	  $("#paso2").addClass("anterior");
 	  $("#pasoFinal").addClass("siguiente");
-	  $("#textoResultado").html( "Con la orientación de nuestros técnicos, podrás implementar los requisitos que te faltan para obtener el nivel 1 del Sello. Puedes comunicarte por la casilla de correo para brindarte más información." );
+	  $("#textoResultado").html( "Con la orientación de nuestro equipo técnico podrás implementar los requisitos que te faltan para obtener el nivel 1 del sello. Comunicate por correo electrónico para recibir más información: <a href ='mailto:sellocamesustentable@came.org.ar'>sellocamesustentable@came.org.ar</a>" );
 	  siguientePaso();
 	  return true;
     } 
@@ -88,6 +92,7 @@ function resetearClases(){
       alert("Tiene que elegir una respuesta");
 	  return false;
     }
+	
 
   });
 
@@ -124,7 +129,7 @@ var check_p10 =0;
 	//  $("#paso2").css("display", "none");
 	  $("#paso3").addClass("anterior");
 	  $("#pasoFinal").addClass("siguiente");
-	  $("#textoResultado").html( "Con la orientación de nuestros técnicos, podrás implementar los requisitos que te faltan para obtener el nivel 2 del Sello. Puedes comunicarte por la casilla de correo para brindarte más información." );
+	  $("#textoResultado").html( "Con la orientación de nuestros técnicos, podrás implementar los requisitos que te faltan para obtener el nivel 2 del Sello. Comunicate por correo electrónico para recibir más información: <a href ='mailto:sellocamesustentable@came.org.ar'>sellocamesustentable@came.org.ar</a>" );
 	  siguientePaso();
 	  return true;
     } 
@@ -154,7 +159,7 @@ var check_p10 =0;
 			resetearClases();
 			$("#paso4").addClass("anterior");
 			$("#pasoFinal").addClass("siguiente");
-			$("#textoResultado").html( "Estás muy cerca de poder certificar el Sello en el nivel 2 o, si lo deseas, solicitar la implementación para poder llegar al nivel 3. Puedes comunicarte por la casilla de correo para brindarte más información." );
+			$("#textoResultado").html( "Con la orientación de nuestros técnicos, podrás implementar los requisitos que te faltan para obtener el nivel 3 del Sello. Comunicate por correo electrónico para recibir más información: <a href ='mailto:sellocamesustentable@came.org.ar'>sellocamesustentable@came.org.ar</a>" );
 		  console.log("alguna ok");
 		  siguientePaso();
 		  return true;
@@ -165,7 +170,7 @@ var check_p10 =0;
 		//$("#paso2").css("display", "none");
 		  $("#paso4").addClass("anterior");
 		  $("#pasoFinal").addClass("siguiente");
-		  $("#textoResultado").html( "Con la orientación de nuestros técnicos, podrás implementar los requisitos que te faltan para obtener el nivel 3 del Sello. Puedes comunicarte por la casilla de correo para brindarte más información." );
+		  $("#textoResultado").html( "Estás muy cerca de poder certificar el Sello en el nivel 2 o, si lo deseas, solicitar la implementación para poder llegar al nivel 3. Comunicate por correo electrónico para recibir más información: <a href ='mailto:sellocamesustentable@came.org.ar'>sellocamesustentable@came.org.ar</a>" );
 		  siguientePaso();
 		  return true;
 		} 

@@ -13,9 +13,13 @@
 </head>
 
 <body>
-
-  <h1 class="titulo">CUESTIONARIO AUTODIAGNÓSTICO SELLO CAME SUSTENTABLE</h1>
-
+  <div class="container">
+    <div class="row justify-content-md-center">
+    <div class="mt-4 col-md-auto">  <img width="250px" src="imgs/CAME-Sustentable.png" alt="Sello CAME Sustentable" title="Sello CAME Sustentable" ></div>
+  
+  <h1 class="titulo">Cuestionario de autodiagnóstico</h1>
+</div>
+</div>
   <!-- multistep form -->
   <form id="msform" class="d-flex justify-content-center">
 
@@ -28,7 +32,7 @@
 
     <!-- fieldsets -->
     <fieldset id="paso1" class="anterior">
-       <h2 class="fs-title">paso1</h2> 
+       <h2 class="fs-title">Paso 1</h2> 
        <div class="input-group mb-3">
         <input placeholder="Nombre" name="nombre" id="nombre" type="text" aria-label="nombre" class="form-control" required>
         <input placeholder="Mail" name="mail" id="mail" type="text" aria-label="mail" class="form-control" required>
@@ -56,7 +60,7 @@
 
 
     <fieldset id="paso2" class="siguiente">
-      <h2 class="fs-title">paso2</h2> 
+      <h2 class="fs-title">Paso 2</h2> 
 
       <div class="mb-4">
         <h3 class="fs-subtitle">¿Cumple las Buenas Prácticas Agrícolas o las Buenas Prácticas de Manufactura, según
@@ -88,7 +92,7 @@
 
 
     <fieldset id="paso3">
-      <h2 class="fs-title">paso3</h2> 
+      <h2 class="fs-title">Paso 3</h2> 
 
       <div class="mb-4">
         <h3 class="fs-subtitle">¿Tiene una política de gestión y objetivos de sustentabilidad definidos?</h3>
@@ -182,7 +186,7 @@
 
 
     <fieldset id="paso4">
-      <h2 class="fs-title">paso4</h2> 
+      <h2 class="fs-title">Paso 4</h2> 
 
       <div class="mb-4">
         <h3 class="fs-subtitle">¿Realiza prácticas de comercio justo con proveedores y clientes?</h3>
@@ -210,8 +214,7 @@
       </div>
 
       <div class="mb-4">
-        <h3 class="fs-subtitle">¿Realiza evaluación de los proveedores para verificar el cumplimiento de la política de
-          compras responsables?</h3>
+        <h3 class="fs-subtitle">¿Realiza una  evaluación de los proveedores para verificar el cumplimiento de la política de compras responsables?</h3>
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="p13" id="inlineRadio1" value="1">
           <label class="form-check-label" for="inlineRadio1">Si</label>
@@ -234,19 +237,7 @@
         </div>
       </div>
 
-      <div class="mb-4">
-        <h3 class="fs-subtitle">¿Promueve la equidad de género a través de prácticas y proyectos concretos?</h3>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="p8" id="inlineRadio1" value="1">
-          <label class="form-check-label" for="inlineRadio1">Si</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="p8" id="inlineRadio2" value="0">
-          <label class="form-check-label" for="inlineRadio2">No</label>
-        </div>
-      </div>
-
-      <div class="mb-4">
+     <div class="mb-4">
         <h3 class="fs-subtitle">¿Publica el reporte de sustentabilidad de la organización?</h3>
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="p15" id="inlineRadio1" value="1">
@@ -264,10 +255,9 @@
     </fieldset>
 
     <fieldset id="pasoFinal">
-      <h2 class="fs-title">pasofinal</h2> 
+      <h2 class="fs-title"><strong>Resultado del autodiagnóstico</strong></h2> 
 
       <div class="mb-4">
-        <h3 class="fs-subtitle">Resultado del autodiagnóstico</h3>
         <p id="textoResultado"></p>
       </div>
       <input id="pasoFinal_prev" type="button" name="previous" class="previous action-button" value="Anterior" />
