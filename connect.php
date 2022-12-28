@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("came.org.ar","came_sellosustentable","72A96F933F70F0E5EF","came_sellosustentable");
+$mysqli = new mysqli("HOST","USUARIO","CONTRASEÑA","TABLA");
 
 // Check connection
 if ($mysqli -> connect_errno) {
