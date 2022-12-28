@@ -24,13 +24,13 @@ body {
     margin-top: 2rem;
 }
 /*form styles*/
-#msform {
+#autodiagnostico {
 	width: 60vw;
 	margin: 20px auto;
 	text-align: center;
 	position: relative;
 }
-#msform fieldset {
+#autodiagnostico fieldset {
 	background: white;
 	border: 0 none;
 	border-radius: 3px;
@@ -44,11 +44,11 @@ body {
 	position: relative;
 }
 /*Hide all except first fieldset*/
-#msform fieldset:not(:first-of-type) {
+#autodiagnostico fieldset:not(:first-of-type) {
 	display: none;
 }
 /*inputs*/
-#msform input[type=text], #msform textarea {
+#autodiagnostico input[type=text], #autodiagnostico textarea {
 	padding: 15px;
 	/* border: 1px solid #ccc;
 	border-radius: 3px;
@@ -60,7 +60,7 @@ body {
 /* 	font-size: 13px; */
 }
 /*buttons*/
-#msform .action-button {
+#autodiagnostico .action-button {
 	width: 100px;
 	background: #27AE60;
 	font-weight: bold;
@@ -71,7 +71,7 @@ body {
 	padding: 10px 5px;
 	margin: 10px 5px;
 }
-#msform .action-button:hover, #msform .action-button:focus {
+#autodiagnostico .action-button:hover, #autodiagnostico .action-button:focus {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
 }
 /*headings*/
